@@ -1,0 +1,503 @@
+* {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    border-bottom: 1px solid transparent;
+    transition:
+        background-color 0.25s,
+        border-bottom 0.25s,
+        box-shadow 0.25s;
+}
+
+.headerBackdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 6px 40px 0px rgba(255, 255, 255, 0.15);
+    -webkit-box-shadow: 0px 6px 40px 0px rgba(255, 255, 255, 0.15);
+    -moz-box-shadow: 0px 6px 40px 0px rgba(255, 255, 255, 0.15);
+}
+
+#headerImage {
+    height: 7em;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    padding: 1rem;
+}
+
+nav>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+nav>a,
+#headerImage,
+main i,
+.contactElement,
+.mobileNavButton,
+#mobileMenu a,
+#mobileMenu i {
+    transition: opacity 0.2s ease-in-out;
+}
+
+nav>a:hover,
+#headerImage:hover,
+main i:hover,
+.contactElement:hover,
+.mobileNavButton:hover,
+#mobileMenu a:hover,
+#mobileMenu i:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+main {
+    height: 85vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+main>h1 {
+    font-size: 4em;
+    font-weight: 600;
+    margin: 0.5em;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+main>p {
+    font-size: 1.25em;
+    margin-top: 0;
+}
+
+i {
+    font-size: 3em;
+    margin: 0.25em;
+}
+
+.socialLinks>a {
+    color: white;
+}
+
+#arrowDownLink {
+    margin: 0.5em;
+    padding-top: 0.5em;
+}
+
+#arrowDownIcon {
+    font-size: 1.5em;
+    opacity: 0;
+    animation: arrowAnim 6s linear 1s infinite;
+    color: white;
+}
+
+@keyframes arrowAnim {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+section {
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+section>h2,
+footer>h2 {
+    font-weight: 600;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+
+#projectsSection {
+    background-color: black;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
+}
+
+#projectsBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 45%;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: rgb(40, 40, 40);
+    border: 1px solid rgb(40, 40, 40);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border 0.25s, transform 0.25s, box-shadow 0.25s, -webkit-box-shadow 0.25s, -moz-box-shadow 0.25s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    -webkit-box-shadow: 5px 8px 20px 0px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 5px 8px 20px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 8px 20px 0px rgba(255, 255, 255, 0.2);
+}
+
+.project h3 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.project p {
+    font-size: 1.15em;
+}
+
+.project img {
+    max-inline-size: 35%;
+    padding: 0.5em;
+    block-size: auto;
+}
+
+.project .wideImage {
+    max-inline-size: 50%;
+}
+
+.project a {
+    text-decoration: none;
+    align-self: flex-end;
+}
+
+.project button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    align-self: flex-end;
+    transition: color 0.25s, background-color 0.25s, border 0.25s, box-shadow 0.25s, -webkit-box-shadow 0.25s, -moz-box-shadow 0.25s;
+}
+
+.project button>i {
+    font-size: 2em;
+}
+
+.project button>p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.project button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 8px 20px 0px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 5px 8px 20px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 8px 20px 0px rgba(255, 255, 255, 0.2);
+}
+
+#skillsSection {
+    background-color: white;
+    color: black;
+    padding-top: 0.5em;
+}
+
+#skillsSection>h2 {
+    text-align: right;
+}
+
+#skillsBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.skill>i {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.skillSeparator {
+    height: 100%;
+    padding-right: 1px;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: black;
+}
+
+.skillText {
+    margin-right: 1em;
+}
+
+footer {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contactBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.contactElement {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactElement>i {
+    padding: 0.5em;
+}
+
+.contactElementText>p {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+.contactElementText>h3 {
+    margin: 0.25em 0 0 0;
+    font-size: 1.25em;
+}
+
+#mobileNav {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0.25em;
+    right: 0.25em;
+}
+
+.mobileNavButton {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 6px 40px 0px rgba(255, 255, 255, 0.15);
+    -webkit-box-shadow: 0px 6px 40px 0px rgba(255, 255, 255, 0.15);
+    -moz-box-shadow: 0px 6px 40px 0px rgba(255, 255, 255, 0.15);
+    border-radius: 100%;
+    color: white;
+    padding: 0.25em;
+    font-size: 90%;
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.25em;
+}
+
+.mobileNavButton i {
+    margin: 0;
+    padding: 0;
+}
+
+#mobileNavUpButton {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+#mobileMenu {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity 0.25s ease-in-out;
+}
+
+#mobileMenu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 2.5em;
+    margin-top: 1em;
+}
+
+#mobileMenu i {
+    color: white;
+    font-size: 4em;
+}
+
+#projects,
+#skills,
+#contact {
+    scroll-margin-top: 5em;
+}
+
+@keyframes glimpse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .skill {
+        width: 40%;
+    }
+
+    main>h1 {
+        font-size: 3.5em;
+    }
+
+    section>h2,
+    footer>h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        position: static;
+        z-index: inherit;
+        background: transparent !important;
+        border-bottom: none !important;
+        box-shadow: none !important;
+    }
+
+    #headerImage {
+        height: 5em;
+    }
+
+    main {
+        height: 60vh;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .skill {
+        width: 90%;
+    }
+
+    .skill i {
+        width: auto;
+    }
+
+    main>h1 {
+        font-size: 2.6em;
+    }
+
+    section>h2,
+    footer>h2 {
+        font-size: 2em;
+    }
+
+    i {
+        font-size: 2.5em;
+    }
+
+    #mobileNav {
+        display: flex;
+    }
+
+    footer {
+        align-items: flex-start;
+        padding-bottom: 8vh;
+        padding-left: 1em;
+    }
+
+    #contactBox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contactElement {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main>h1 {
+        font-size: 2.2em;
+    }
+
+    i {
+        font-size: 2em;
+    }
+}

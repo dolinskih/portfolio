@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio Huberta Dolińskiego zawierające projekty aplikacji i witryn internetowych.">
+    <title>Hubert Doliński</title>
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="/favicon-light.ico" type="image/x-icon" media="(prefers-color-scheme: dark)" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div id="mobileNav">
+        <div id="mobileNavUpButton" class="mobileNavButton" onclick="scrollToTop()">
+            <i class="bi bi-arrow-up"></i>
+        </div>
+        <div id="mobileNavMenuButton" class="mobileNavButton">
+            <i class="bi bi-list"></i>
+        </div>
+    </div>
+    <div id="mobileMenu">
+        <a href="#projects" class="mobileMenuLink">PROJEKTY</a>
+        <a href="#skills" class="mobileMenuLink">UMIEJĘTNOŚCI</a>
+        <a href="#contact" class="mobileMenuLink">KONTAKT</a>
+        <i class="bi bi-x" id="mobileMenuCloseButton"></i>
+    </div>
+    <header id="header">
+        <img src="logo-white.svg" alt="Hubert Doliński portfolio logo" id="headerImage" onclick="scrollToTop()" />
+        <nav>
+            <a href="#projects">PROJEKTY</a>
+            <a href="#skills">UMIEJĘTNOŚCI</a>
+            <a href="#contact">KONTAKT</a>
+        </nav>
+    </header>
+    <main>
+        <h1>HUBERT DOLIŃSKI</h1>
+        <p>PORTFOLIO</p>
+        <div class="socialLinks">
+            <a href="mailto:contact@hdolinski.com"><i class="bi bi-envelope"></i></a>
+            <a href="https://github.com/dolinskih"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/dolinskih"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <a id="arrowDownLink" href="#projects">
+            <i id="arrowDownIcon" class="bi bi-arrow-down"></i>
+        </a>
+    </main>
+    <section id="projectsSection">
+        <h2 id="projects">PROJEKTY</h2>
+        <div id="projectsBox">
+            <div class="project">
+                <div>
+                    <h3>Postcards</h3>
+                    <p>Aplikacja mobilna symulująca tablicę korkową, do której można przyczepiać notatki, listy zadań,
+                        obrazy itp. Napisana w Expo (React Native).</p>
+                </div>
+                <img src="/assets/postcards.png" alt="Postcards image" width="256" height="256">
+                <a href="https://github.com/dolinskih/Postcards">
+                    <button>
+                        <i class="bi bi-github"></i>
+                        <p>GitHub</p>
+                    </button>
+                </a>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>Scribe</h3>
+                    <p>Aplikacja Next.JS do tworzenia notatek i list zadań, które można tworzyć w zespołach.
+                        Wykorzystuje Docker, Bootstrap 5 i Google Firebase.</p>
+                </div>
+                <img src="/assets/scribe.png" alt="Scribe image" width="1498" height="415">
+                <a href="https://github.com/dolinskih/Scribe">
+                    <button>
+                        <i class="bi bi-github"></i>
+                        <p>GitHub</p>
+                    </button>
+                </a>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>Route</h3>
+                    <p>Aplikacja internetowa do zarządzania codzienną rutyną - projekt własny. Napisana w HTML, CSS i
+                        JS. Wykorzystuje Google Firebase, OpenStreetMap i API tworzenia tras.</p>
+                </div>
+                <img src="/assets/cliviaroute_s.webp" alt="Route image" class="wideImage" width="1324" height="656">
+                <a href="#contact">
+                    <button>
+                        <i class="bi bi-person-lines-fill"></i>
+                        <p>Kontakt</p>
+                    </button>
+                </a>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>Domki Letniskowe Tola</h3>
+                    <p>Projekt strony internetowej, wykonanie oraz implementacja w WordPress.</p>
+                </div>
+                <img src="/assets/domkiletniskowetola.webp" alt="Domki Letniskowe Tola image" class="wideImage"
+                    width="1896" height="950">
+                <a href="https://domkiletniskowetola.pl">
+                    <button>
+                        <i class="bi bi-link"></i>
+                        <p>Link</p>
+                    </button>
+                </a>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>Termocheck</h3>
+                    <p>Projekt logotypu i strony internetowej, wykonanie oraz implementacja w autorskim CMS.</p>
+                </div>
+                <img src="/assets/termocheck.webp" alt="Termocheck image" width="423" height="88">
+                <a href="https://www.facebook.com/profile.php?id=100094626385829">
+                    <button>
+                        <i class="bi bi-facebook"></i>
+                        <p>Facebook</p>
+                    </button>
+                </a>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>DictManager</h3>
+                    <p>Aplikacja do zarządzania danymi typu słownik z dodatkowymi właściwościami. API napisane w C#
+                        ASP.NET Core Web API, aplikacja front-end w Angular.</p>
+                </div>
+                <img src="/assets/dictmanager.png" alt="DictManager image" width="521" height="141">
+                <a href="#contact">
+                    <button>
+                        <i class="bi bi-person-lines-fill"></i>
+                        <p>Kontakt</p>
+                    </button>
+                </a>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>Bagietkownia</h3>
+                    <p>Projekt logotypu.</p>
+                </div>
+                <img src="/assets/bagietkownia.png" alt="Bagietkownia image" width="1760" height="469">
+                <a href="https://www.instagram.com/bagietkownia/">
+                    <button>
+                        <i class="bi bi-instagram"></i>
+                        <p>Instagram</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="skillsSection">
+        <h2 id="skills">UMIEJĘTNOŚCI</h2>
+        <div id="skillsBox">
+            <div class="skill">
+                <i class="bi bi-globe2"></i>
+                <div class="skillSeparator"></div>
+                <div class="skillText">
+                    <h3>Witryna internetowa</h3>
+                    <p>Projekt witryny internetowej, realizacja i umieszczenie jej na serwerze.<br><br>Najczęściej
+                        wykorzystywane technologie: HTML, CSS, JavaScript, TypeScript, PHP, WordPress, React.</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="bi bi-app"></i>
+                <div class="skillSeparator"></div>
+                <div class="skillText">
+                    <h3>Aplikacja internetowa</h3>
+                    <p>Projekt i utworzenie wielofunkcyjnej aplikacji internetowej z możliwością instalacji na
+                        urządzeniach mobilnych i komputerach.<br><br>Najczęściej wykorzystywane technologie: React,
+                        Next.JS, Angular, Node.JS, Express, PWA.</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="bi bi-palette2"></i>
+                <div class="skillSeparator"></div>
+                <div class="skillText">
+                    <h3>Grafika</h3>
+                    <p>Zaprojektowanie logotypów, grafiki firmowej, reklam, elementów UI aplikacji i witryn.</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="bi bi-phone"></i>
+                <div class="skillSeparator"></div>
+                <div class="skillText">
+                    <h3>Aplikacja mobilna</h3>
+                    <p>Tworzenie natywnych aplikacji na urządzenia z systemem Android i iOS.<br><br>Najczęściej
+                        wykorzystywane technologie: Java (Android Studio) i React Native.</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="bi bi-pc-display"></i>
+                <div class="skillSeparator"></div>
+                <div class="skillText">
+                    <h3>Aplikacja desktopowa</h3>
+                    <p>Programy dla urządzeń z systemem Microsoft Windows.<br><br>Najczęściej wykorzystywane
+                        technologie: WPF, WinForms, Entity Framework.</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="bi bi-database"></i>
+                <div class="skillSeparator"></div>
+                <div class="skillText">
+                    <h3>Bazy danych</h3>
+                    <p>Utworzenie i obsługa baz danych.<br><br>Najczęściej wykorzystywane technologie: MySQL, MongoDB,
+                        MS Excel, MS Access i Google Firebase.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2 id="contact">KONTAKT</h2>
+        <div id="contactBox">
+            <a class="contactElement" href="mailto:contact@hdolinski.com">
+                <i class="bi bi-envelope"></i>
+                <div class="contactElementText">
+                    <p>Adres e-mail</p>
+                    <h3>contact@hdolinski.com</h3>
+                </div>
+            </a>
+            <a class="contactElement" href="https://github.com/dolinskih">
+                <i class="bi bi-github"></i>
+                <div class="contactElementText">
+                    <p>GitHub</p>
+                    <h3>@dolinskih</h3>
+                </div>
+            </a>
+            <a class="contactElement" href="https://www.linkedin.com/in/dolinskih">
+                <i class="bi bi-linkedin"></i>
+                <div class="contactElementText">
+                    <p>LinkedIn</p>
+                    <h3>@dolinskih</h3>
+                </div>
+            </a>
+        </div>
+        <p>&copy; Hubert Doliński 2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

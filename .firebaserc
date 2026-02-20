@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "hubertdolinski-portfolio"
+  },
+  "targets": {
+    "hubertdolinski-portfolio": {
+      "hosting": {
+        "hubertdolinski": [
+          "hubertdolinski"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
