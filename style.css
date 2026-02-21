@@ -195,6 +195,7 @@ footer>h2 {
     max-inline-size: 35%;
     padding: 0.5em;
     block-size: auto;
+    height: auto;
 }
 
 .project .wideImage {
