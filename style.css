@@ -39,6 +39,7 @@ header {
 #headerImage {
     height: 7em;
     padding: 1rem;
+    width: auto;
 }
 
 nav {
