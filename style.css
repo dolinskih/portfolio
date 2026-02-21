@@ -197,6 +197,9 @@ footer>h2 {
     padding: 0.5em;
     block-size: auto;
     height: auto;
+    width: auto;
+    object-fit: contain;
+    align-self:flex-start;
 }
 
 .project .wideImage {
