@@ -220,7 +220,7 @@ footer>h2 {
     border: 1px solid white;
     border-radius: 15px;
     padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-right: 0.6em;
     align-self: flex-end;
     transition: color 0.25s, background-color 0.25s, border 0.25s, box-shadow 0.25s, -webkit-box-shadow 0.25s, -moz-box-shadow 0.25s;
 }
@@ -242,6 +242,27 @@ footer>h2 {
     -webkit-box-shadow: 5px 8px 20px 0px rgba(255, 255, 255, 0.2);
     -moz-box-shadow: 5px 8px 20px 0px rgba(255, 255, 255, 0.2);
     box-shadow: 5px 8px 20px 0px rgba(255, 255, 255, 0.2);
+}
+
+.projectButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.projectButtonsDownloadsButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projectButtonsDownloads > h4{
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+.projectButtonsDownloadsButtons > a:not(:last-of-type){
+    margin-right: 0.5em;
 }
 
 #skillsSection {
@@ -530,6 +551,21 @@ footer {
 
     .contactElement {
         justify-content: space-between;
+    }
+
+    .projectButtons{
+        flex-direction: column;
+    }
+
+    .projectButtonsDownloads{
+        width: 100%;
+        margin-bottom: 0.5em;
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    .projectButtonsDownloadsButtons{
+        justify-content: flex-end;
     }
 }
 
