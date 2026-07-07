@@ -577,4 +577,8 @@ footer {
     i {
         font-size: 2em;
     }
+
+    .contactElementText>h3 {
+        font-size: 1em;
+    }
 }
