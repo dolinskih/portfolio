@@ -192,7 +192,7 @@ footer>h2 {
     font-size: 1.15em;
 }
 
-.project img {
+.project > img {
     max-inline-size: 35%;
     padding: 0.5em;
     block-size: auto;
@@ -200,6 +200,11 @@ footer>h2 {
     width: auto;
     object-fit: contain;
     align-self:flex-start;
+}
+
+#floxtMicrosoftStoreDownload img {
+    max-inline-size: none;
+    padding: 0 0 0 5px;
 }
 
 .project .wideImage {
@@ -478,7 +483,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     nav {
         display: none;
     }
@@ -569,7 +574,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     main>h1 {
         font-size: 2.2em;
     }
