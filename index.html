@@ -4,80 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio Huberta Dolińskiego zawierające projekty aplikacji i witryn internetowych.">
-    <title>Hubert Doliński</title>
-    <link rel="stylesheet" href="fonts.css?v=2" />
-    <link rel="stylesheet" href="style.css?v=2.0.1" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" media="(prefers-color-scheme: light)" />
-    <link rel="icon" href="/favicon-light.ico" type="image/x-icon" media="(prefers-color-scheme: dark)" />
+    <title>Hubert Doliński - Portfolio</title>
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/index.css?v=1.0.3" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./assets/favicon-light.ico" type="image/x-icon" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" media="(prefers-color-scheme: light)" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <header id="header">
-        <img src="logo-white.svg" alt="Hubert Doliński portfolio logo" id="headerImage" onclick="scrollToTop()"
-            width="512" height="512" />
-        <nav>
-            <a href="#projects">PROJEKTY</a>
-            <a href="#skills">TECHNOLOGIE</a>
-            <a href="#contact">KONTAKT</a>
-        </nav>
-    </header>
-    <main>
-        <h1>HUBERT DOLIŃSKI</h1>
-        <p>PORTFOLIO</p>
-        <div class="socialLinks">
-            <a href="mailto:hubert.dolinski@outlook.com"><i class="bi bi-envelope"></i></a>
-            <a href="https://github.com/dolinskih"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/dolinskih"><i class="bi bi-linkedin"></i></a>
+    <div id="arrowUp">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <div id="openNav">
+        <i class="bi bi-list" id="openNavIcon"></i>
+    </div>
+
+    <nav>
+        <h2>CONTACT</h2>
+        <div class="nav-contactlink">
+            <a href="mailto:hubert.dolinski@outlook.com">hubert.dolinski@outlook.com</a>
         </div>
-        <a id="arrowDownLink" href="#projects">
-            <i id="arrowDownIcon" class="bi bi-arrow-down"></i>
-        </a>
-    </main>
-    <section id="projectsSection">
-        <h2 id="projects">PROJEKTY</h2>
-        <div id="projectsBox">
-            <div class="project">
-                <div>
-                    <h3>Floxt</h3>
-                    <p>Aplikacja internetowa (Next.JS) do tworzenia notatek w autorskim formacie do stylizowania tekstu,
-                        załączania linków i obrazów oraz tworzenia tabel. Spakowana przy użyciu Tauri.</p>
+        <div class="nav-contactlink">
+            <a href="https://github.com/dolinskih">GitHub @dolinskih</a>
+        </div>
+        <div class="nav-contactlink">
+            <a href="https://www.linkedin.com/in/dolinskih">LinkedIn @dolinskih</a>
+        </div>
+
+        <h2>PROJECTS</h2>
+        <a href="#link-floxt" class="nav-project">Floxt</a>
+        <a href="#link-postcards" class="nav-project">Postcards</a>
+        <a href="#link-scribe" class="nav-project">Scribe</a>
+        <a href="#link-wordpress" class="nav-project">WordPress Websites</a>
+    </nav>
+
+    <main>
+        <img src="./assets/logo.svg" alt="HD logo black" id="main-logo"/>
+        <h1 id="main-nametext">HUBERT DOLIŃSKI</h1>
+        <h3 id="main-portfoliotext">PORTFOLIO</h3>
+
+        <div id="link-floxt" class="main-project">
+            <div class="main-project-header">
+                <h2>Floxt</h2>
+            </div>
+            <div class="main-project-mid">
+                <div class="main-project-mid-left">
+                    <img src="./assets/floxt.webp" alt="Floxt app screenshot" class="main-project-mid-left-img">
                 </div>
-                <img src="/assets/floxt.webp" alt="Floxt image" class="wideImage" width="1920" height="1048">
-                <div class="projectButtons">
-                    <div class="projectButtonsDownloads">
-                        <!-- <h4>Pobierz na</h4> -->
-                        <div class="projectButtonsDownloadsButtons">
-                            <a id="floxtMicrosoftStoreDownload" href="https://get.microsoft.com/installer/download/9NDVSRJ53DVK?referrer=appbadge"
-                                target="_self">
-                                <img src="https://get.microsoft.com/images/en-us%20light.svg" width="200" />
-                            </a>
-                            <!-- <a href="https://github.com/dolinskih/floxt/releases/tag/v.0.4">
-                                <button>
-                                    <i class="bi bi-tux"></i>
-                                    <p>Linux</p>
-                                </button>
-                            </a> -->
-                        </div>
-                    </div>
-                    <a href="https://github.com/dolinskih/floxt">
-                        <button>
-                            <i class="bi bi-github"></i>
-                            <p>GitHub</p>
-                        </button>
-                    </a>
+                <div class="main-project-mid-right">
+                    <h4>Made with</h4>
+                    <h3>Next.js &#x2022; Rust &#x2022; Tauri</h3>
+                    <h4>Description</h4>
+                    <p>Desktop web app for creating notes in an original formatting syntax with advanced
+                        functionalities: text formatting, editor automatic code completion, adding links and images,
+                        line numbering, file statistics and much more.</p>
                 </div>
             </div>
-            <div class="project">
-                <div>
-                    <h3>Postcards</h3>
-                    <p>Aplikacja mobilna symulująca tablicę korkową, do której można przyczepiać notatki, listy zadań i
-                        obrazy. Napisana w Expo (React Native).</p>
+            <div class="main-project-bottom">
+                <a id="floxtMicrosoftStoreDownload"
+                    href="https://get.microsoft.com/installer/download/9NDVSRJ53DVK?referrer=appbadge" target="_self">
+                    <img src="https://get.microsoft.com/images/en-us%20light.svg" width="200" />
+                </a>
+
+                <a href="https://github.com/dolinskih/floxt">
+                    <button>
+                        <i class="bi bi-github"></i>
+                        <p>GitHub</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="link-postcards" class="main-project">
+            <div class="main-project-header">
+                <h2>Postcards</h2>
+            </div>
+            <div class="main-project-mid">
+                <div class="main-project-mid-left">
+                    <img src="./assets/postcards.webp" alt="Postcards app logo" class="downsize-image main-project-mid-left-img">
                 </div>
-                <img src="/assets/postcards.webp" alt="Postcards image" width="256" height="256">
+                <div class="main-project-mid-right">
+                    <h4>Made with</h4>
+                    <h3>Expo - React Native</h3>
+                    <h4>Description</h4>
+                    <p>Mobile app simulating a pinboard, to which user can attach notes, to-do lists and images.
+                        Extensive system for aligning <i>pins</i> by sliding and resizing them.</p>
+                </div>
+            </div>
+            <div class="main-project-bottom">
                 <a href="https://github.com/dolinskih/Postcards">
                     <button>
                         <i class="bi bi-github"></i>
@@ -85,13 +102,24 @@
                     </button>
                 </a>
             </div>
-            <div class="project">
-                <div>
-                    <h3>Scribe</h3>
-                    <p>Aplikacja Next.JS do tworzenia notatek i list zadań, które można tworzyć w zespołach.
-                        Wykorzystuje Docker, Bootstrap 5 i Google Firebase.</p>
+        </div>
+
+        <div id="link-scribe" class="main-project">
+            <div class="main-project-header">
+                <h2>Scribe</h2>
+            </div>
+            <div class="main-project-mid">
+                <div class="main-project-mid-left">
+                    <img src="./assets/scribe.webp" alt="Scribe app logo" class="main-project-mid-left-img" id="scribeLogo">
                 </div>
-                <img src="/assets/scribe.webp" alt="Scribe image" width="1498" height="415">
+                <div class="main-project-mid-right">
+                    <h4>Made with</h4>
+                    <h3>Next.js &#x2022; Docker &#x2022; Google Firebase</h3>
+                    <h4>Description</h4>
+                    <p>Web app for creating notes and to-do lists in teams. Authentication with user accounts.</p>
+                </div>
+            </div>
+            <div class="main-project-bottom">
                 <a href="https://github.com/dolinskih/Scribe">
                     <button>
                         <i class="bi bi-github"></i>
@@ -99,189 +127,75 @@
                     </button>
                 </a>
             </div>
-            <div class="project">
-                <div>
-                    <h3>Route</h3>
-                    <p>Aplikacja internetowa do zarządzania codzienną rutyną - projekt własny. Napisana w HTML, CSS i
-                        JS. Wykorzystuje Google Firebase, OpenStreetMap i API tworzenia tras.</p>
-                </div>
-                <img src="/assets/cliviaroute_s.webp" alt="Route image" class="wideImage" width="1324" height="656">
-                <a href="#contact">
-                    <button>
-                        <i class="bi bi-person-lines-fill"></i>
-                        <p>Kontakt</p>
-                    </button>
-                </a>
-            </div>
-            <div class="project">
-                <div>
-                    <h3>Domki Letniskowe Pod Brzozą</h3>
-                    <p>Projekt strony internetowej, wykonanie oraz implementacja w WordPress.</p>
-                </div>
-                <img src="/assets/podbrzoza.webp" alt="Pod Brzozą image" class="wideImage" width="1365" height="927">
-                <a href="https://podbrzozachlopy.pl">
-                    <button>
-                        <i class="bi bi-link"></i>
-                        <p>Link</p>
-                    </button>
-                </a>
-            </div>
-            <div class="project">
-                <div>
-                    <h3>Park Bike</h3>
-                    <p>Projekt strony internetowej, wykonanie oraz implementacja w WordPress.</p>
-                </div>
-                <img src="/assets/parkbike.webp" alt="Park Bike image" class="wideImage" width="1454" height="980">
-                <a href="https://parkbike.pl">
-                    <button>
-                        <i class="bi bi-link"></i>
-                        <p>Link</p>
-                    </button>
-                </a>
-            </div>
-            <div class="project">
-                <div>
-                    <h3>Domki Letniskowe Tola</h3>
-                    <p>Projekt strony internetowej, wykonanie oraz implementacja w WordPress.</p>
-                </div>
-                <img src="/assets/domkiletniskowetola.webp" alt="Domki Letniskowe Tola image" class="wideImage"
-                    width="1896" height="950">
-                <a href="https://domkiletniskowetola.pl">
-                    <button>
-                        <i class="bi bi-link"></i>
-                        <p>Link</p>
-                    </button>
-                </a>
-            </div>
-            <div class="project">
-                <div>
-                    <h3>Termocheck</h3>
-                    <p>Projekt logotypu i strony internetowej, wykonanie oraz implementacja w autorskim CMS.</p>
-                </div>
-                <img src="/assets/termocheck.webp" alt="Termocheck image" width="423" height="88">
-                <a href="https://www.facebook.com/profile.php?id=100094626385829">
-                    <button>
-                        <i class="bi bi-facebook"></i>
-                        <p>Facebook</p>
-                    </button>
-                </a>
-            </div>
-            <div class="project">
-                <div>
-                    <h3>DictManager</h3>
-                    <p>Aplikacja do zarządzania danymi typu słownik z dodatkowymi właściwościami. API napisane w C#
-                        ASP.NET Core Web API, aplikacja front-end w Angular.</p>
-                </div>
-                <img src="/assets/dictmanager.webp" alt="DictManager image" width="521" height="141">
-                <a href="#contact">
-                    <button>
-                        <i class="bi bi-person-lines-fill"></i>
-                        <p>Kontakt</p>
-                    </button>
-                </a>
-            </div>
-            <!-- <div class="project">
-                <div>
-                    <h3>Bagietkownia</h3>
-                    <p>Projekt logotypu.</p>
-                </div>
-                <img src="/assets/bagietkownia.webp" alt="Bagietkownia image" width="1760" height="469">
-                <a href="https://www.instagram.com/bagietkownia/">
-                    <button>
-                        <i class="bi bi-instagram"></i>
-                        <p>Instagram</p>
-                    </button>
-                </a>
-            </div> -->
         </div>
-    </section>
-    <section id="skillsSection">
-        <h2 id="skills">TECHNOLOGIE</h2>
-        <div id="skillsBox">
-            <div class="skill">
-                <div class="skillHeader">
-                    <i class="bi bi-globe2"></i>
-                    <h3>Witryny internetowe</h3>
-                </div>
-                <div class="skillSeparator"></div>
-                <p>HTML CSS Wordpress Next.JS JavaScript TypeScript PHP</p>
+
+        <div id="link-wordpress" class="main-project">
+            <div class="main-project-header">
+                <h2>WordPress Websites</h2>
             </div>
-            <div class="skill">
-                <div class="skillHeader">
-                    <i class="bi bi-app"></i>
-                    <h3>Aplikacje internetowe</h3>
+
+            <div class="main-project-sites">
+                <div class="main-project-sites-site">
+                    <div class="main-project-sites-site-left">
+                        <img src="./assets/podbrzoza_new.webp" alt="Domki Pod Brzozą screenshot" class="main-project-sites-site-left-img">
+                    </div>
+                    <div class="main-project-sites-site-right">
+                        <h3>Domki Letniskowe Pod Brzozą</h3>
+                        <a href="https://podbrzozachlopy.pl">
+                            <button>
+                                <i class="bi bi-link"></i>
+                                <p>Link</p>
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div class="skillSeparator"></div>
-                <p>React Angular Next.JS PWA</p>
-            </div>
-            <div class="skill">
-                <div class="skillHeader">
-                    <i class="bi bi-database"></i>
-                    <h3>Bazy danych</h3>
+
+                <div class="main-project-sites-site">
+                    <div class="main-project-sites-site-left">
+                        <img src="./assets/parkbike.webp" alt="Park Bike screenshot" class="main-project-sites-site-left-img">
+                    </div>
+                    <div class="main-project-sites-site-right">
+                        <h3>Park Bike</h3>
+                        <a href="https://parkbike.pl">
+                            <button>
+                                <i class="bi bi-link"></i>
+                                <p>Link</p>
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div class="skillSeparator"></div>
-                <p>MySQL MongoDB Firebase</p>
-            </div>
-            <div class="skill">
-                <div class="skillHeader">
-                    <i class="bi bi-phone"></i>
-                    <h3>Aplikacje mobilne</h3>
+
+                <div class="main-project-sites-site">
+                    <div class="main-project-sites-site-left">
+                        <img src="./assets/domkiletniskowetola.webp" alt="Domki Letniskowe Tola screenshot" class="main-project-sites-site-left-img">
+                    </div>
+                    <div class="main-project-sites-site-right">
+                        <h3>Domki Letniskowe Tola</h3>
+                        <a href="https://domkiletniskowetola.pl">
+                            <button>
+                                <i class="bi bi-link"></i>
+                                <p>Link</p>
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div class="skillSeparator"></div>
-                <p>Expo / React Native</p>
             </div>
-            <div class="skill">
-                <div class="skillHeader">
-                    <i class="bi bi-git"></i>
-                    <h3>Zarządzanie projektami</h3>
-                </div>
-                <div class="skillSeparator"></div>
-                <p>Git Linux</p>
-            </div>
+
         </div>
-    </section>
+    </main>
+
     <footer>
-        <h2 id="contact">KONTAKT</h2>
-        <div id="contactBox">
-            <a class="contactElement" href="mailto:hubert.dolinski@outlook.com">
-                <i class="bi bi-envelope"></i>
-                <div class="contactElementText">
-                    <p>Adres e-mail</p>
-                    <h3>hubert.dolinski@outlook.com</h3>
-                </div>
-            </a>
-            <a class="contactElement" href="https://github.com/dolinskih">
-                <i class="bi bi-github"></i>
-                <div class="contactElementText">
-                    <p>GitHub</p>
-                    <h3>@dolinskih</h3>
-                </div>
-            </a>
-            <a class="contactElement" href="https://www.linkedin.com/in/dolinskih">
-                <i class="bi bi-linkedin"></i>
-                <div class="contactElementText">
-                    <p>LinkedIn</p>
-                    <h3>@dolinskih</h3>
-                </div>
-            </a>
-        </div>
         <p>&copy; Hubert Doliński 2026</p>
+        <p>
+            <a href="mailto:hubert.dolinski@outlook.com">E-mail</a>
+            |
+            <a href="https://github.com/dolinskih">GitHub</a>
+            |
+            <a href="https://www.linkedin.com/in/dolinskih">LinkedIn</a>
+        </p>
     </footer>
-    <div id="mobileNav">
-        <div id="mobileNavUpButton" class="mobileNavButton" onclick="scrollToTop()">
-            <i class="bi bi-arrow-up"></i>
-        </div>
-        <div id="mobileNavMenuButton" class="mobileNavButton">
-            <i class="bi bi-list"></i>
-        </div>
-    </div>
-    <div id="mobileMenu">
-        <a href="#projects" class="mobileMenuLink">PROJEKTY</a>
-        <a href="#skills" class="mobileMenuLink">TECHNOLOGIE</a>
-        <a href="#contact" class="mobileMenuLink">KONTAKT</a>
-        <i class="bi bi-x" id="mobileMenuCloseButton"></i>
-    </div>
-    <script src="script.js"></script>
+
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

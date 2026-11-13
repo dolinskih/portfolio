@@ -1,3 +1,3 @@
-# Portfolio
+# Portfolio 2.0 (2026)
 
-Project of portfolio website.
+Repository of my portfolio's website source code.
