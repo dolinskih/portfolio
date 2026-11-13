@@ -1,0 +1,22 @@
+# Hubert Doliński — Portfolio
+
+> Personal portfolio of software developer Hubert Doliński, showcasing desktop, mobile, web applications, and WordPress websites.
+
+## Overview
+- [Portfolio Home](https://hdolinski.com/): Main portfolio page with project descriptions, screenshots, and contact links.
+
+## Applications
+- [Floxt on GitHub](https://github.com/dolinskih/floxt): Desktop web app built with Next.js, Rust, and Tauri for creating notes in an original formatting syntax with automatic code completion, links, images, line numbering, and file statistics.
+- [Floxt on Microsoft Store](https://get.microsoft.com/installer/download/9NDVSRJ53DVK?referrer=appbadge): Windows installer download for Floxt.
+- [Postcards on GitHub](https://github.com/dolinskih/Postcards): Mobile app built with Expo and React Native simulating a pinboard for attaching and aligning notes, to-do lists, and images.
+- [Scribe on GitHub](https://github.com/dolinskih/Scribe): Team note-taking and to-do list web app built with Next.js, Docker, and Google Firebase with user account authentication.
+
+## WordPress Websites
+- [Domki Letniskowe Pod Brzozą](https://podbrzozachlopy.pl): WordPress website for holiday cottages in Chłopy.
+- [Park Bike](https://parkbike.pl): WordPress website for Park Bike.
+- [Domki Letniskowe Tola](https://domkiletniskowetola.pl): WordPress website for Domki Letniskowe Tola.
+
+## Contact
+- [Email](mailto:hubert.dolinski@outlook.com): hubert.dolinski@outlook.com
+- [GitHub @dolinskih](https://github.com/dolinskih): Source code repositories and open-source projects.
+- [LinkedIn @dolinskih](https://www.linkedin.com/in/dolinskih): Professional profile.

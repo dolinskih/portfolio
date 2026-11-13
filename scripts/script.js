@@ -23,7 +23,7 @@ const scrollToTop = () => {
 
 arrowUp.addEventListener('click', () => { scrollToTop() })
 
-openedNav = false;
+let openedNav = false;
 const openNav = document.getElementById("openNav");
 const openNavIcon = document.getElementById("openNavIcon");
 
@@ -37,6 +37,7 @@ const openNavFunctionality = () => {
         openNavIcon.classList.remove("bi-list");
         openNavIcon.classList.add("bi-x-lg");
         openedNav = true;
+        openNav.setAttribute("aria-expanded", "true");
         document.body.style.overflow = "hidden";
     } else {
         document.querySelector("nav").style.opacity = 0;
@@ -47,6 +48,7 @@ const openNavFunctionality = () => {
         openNavIcon.classList.remove("bi-x-lg");
         openNavIcon.classList.add("bi-list");
         openedNav = false;
+        openNav.setAttribute("aria-expanded", "false");
         document.body.style.overflow = "visible";
     }
 }
@@ -56,7 +58,11 @@ openNav.addEventListener("click", openNavFunctionality)
 const navLinks = document.querySelectorAll("nav > a, .nav-contactlink");
 
 navLinks.forEach(link => {
-    link.addEventListener("click", openNavFunctionality)
+    link.addEventListener("click", () => {
+        if (openedNav) {
+            openNavFunctionality();
+        }
+    })
 })
 
 const mainLogoIcon = document.getElementById("main-logo");

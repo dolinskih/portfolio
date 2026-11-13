@@ -1,0 +1,35 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Hubert Doliński — Portfolio",
+    "identifier": "did:web:hdolinski.com",
+    "documentationUrl": "https://hdolinski.com/llms.txt",
+    "logoUrl": "https://hdolinski.com/assets/logo.svg"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:hdolinski.com:portfolio:overview",
+      "displayName": "Hubert Doliński Portfolio Overview",
+      "type": "text/markdown",
+      "url": "https://hdolinski.com/llms.txt",
+      "description": "Concise Markdown summary of Hubert Doliński's applications, WordPress websites, tech stack, and contact links.",
+      "representativeQueries": [
+        "What projects has Hubert Doliński built?",
+        "What technologies does Hubert Doliński work with?",
+        "How can I contact Hubert Doliński?"
+      ]
+    },
+    {
+      "identifier": "urn:air:hdolinski.com:portfolio:home",
+      "displayName": "Hubert Doliński — Portfolio Website",
+      "type": "text/html",
+      "url": "https://hdolinski.com/",
+      "description": "Interactive portfolio showcasing desktop, mobile, and web applications (Floxt, Postcards, Scribe) and WordPress client websites.",
+      "representativeQueries": [
+        "Show Hubert Doliński's portfolio website",
+        "Where can I download Floxt or view its source code?",
+        "What WordPress websites has Hubert Doliński created?"
+      ]
+    }
+  ]
+}

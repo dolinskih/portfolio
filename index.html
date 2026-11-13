@@ -4,25 +4,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of applications and websites made by Hubert Doliński.">
+    <meta name="author" content="Hubert Doliński">
+    <meta name="robots" content="index, follow">
     <title>Hubert Doliński - Portfolio</title>
+
+    <link rel="canonical" href="https://hdolinski.com/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="ard" href="/.well-known/ard.json">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hubert Doliński - Portfolio">
+    <meta property="og:description" content="Portfolio of applications and websites made by Hubert Doliński.">
+    <meta property="og:url" content="https://hdolinski.com/">
+    <meta property="og:site_name" content="Hubert Doliński - Portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hubert Doliński - Portfolio">
+    <meta name="twitter:description" content="Portfolio of applications and websites made by Hubert Doliński.">
+
+    <link rel="preload" href="./fonts/dm-sans-v17-latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/dm-sans-v17-latin-ext-600.woff2" as="font" type="font/woff2" crossorigin>
+
     <link rel="stylesheet" href="./styles/fonts.css">
-    <link rel="stylesheet" href="./styles/index.css?v=1.0.3" />
+    <link rel="stylesheet" href="./styles/index.css?v=1.0.4" />
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./assets/favicon-light.ico" type="image/x-icon" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" media="(prefers-color-scheme: light)" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "url": "https://hdolinski.com/",
+      "name": "Hubert Doliński - Portfolio",
+      "description": "Portfolio of applications and websites made by Hubert Doliński.",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Hubert Doliński",
+        "url": "https://hdolinski.com/",
+        "email": "mailto:hubert.dolinski@outlook.com",
+        "sameAs": [
+          "https://github.com/dolinskih",
+          "https://www.linkedin.com/in/dolinskih"
+        ]
+      }
+    }
+    </script>
 </head>
 
 <body>
-    <div id="arrowUp">
-        <i class="bi bi-arrow-up"></i>
-    </div>
+    <button type="button" id="arrowUp" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
 
-    <div id="openNav">
-        <i class="bi bi-list" id="openNavIcon"></i>
-    </div>
+    <button type="button" id="openNav" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="mainNav">
+        <i class="bi bi-list" id="openNavIcon" aria-hidden="true"></i>
+    </button>
 
-    <nav>
+    <main>
+        <img src="./assets/logo.svg" alt="Hubert Doliński HD logo" id="main-logo" width="512" height="512" />
+        <h1 id="main-nametext">HUBERT DOLIŃSKI</h1>
+        <p id="main-portfoliotext">PORTFOLIO</p>
+
+        <section id="link-floxt" class="main-project" aria-labelledby="heading-floxt">
+            <div class="main-project-header">
+                <h2 id="heading-floxt">Floxt</h2>
+            </div>
+            <div class="main-project-mid">
+                <div class="main-project-mid-left">
+                    <img src="./assets/floxt.webp" alt="Floxt app screenshot" class="main-project-mid-left-img"
+                        width="1920" height="1048">
+                </div>
+                <div class="main-project-mid-right">
+                    <h3 class="project-subheading">Made with</h3>
+                    <p class="project-tech">Next.js &#x2022; Rust &#x2022; Tauri</p>
+                    <h3 class="project-subheading">Description</h3>
+                    <p>Desktop web app for creating notes in an original formatting syntax with advanced
+                        functionalities: text formatting, editor automatic code completion, adding links and images,
+                        line numbering, file statistics and much more.</p>
+                </div>
+            </div>
+            <div class="main-project-bottom">
+                <a id="floxtMicrosoftStoreDownload"
+                    href="https://get.microsoft.com/installer/download/9NDVSRJ53DVK?referrer=appbadge" target="_self">
+                    <img src="https://get.microsoft.com/images/en-us%20light.svg"
+                        alt="Download Floxt from Microsoft Store" width="161" height="44" />
+                </a>
+
+                <a href="https://github.com/dolinskih/floxt" class="btn" aria-label="Floxt on GitHub">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="link-postcards" class="main-project" aria-labelledby="heading-postcards">
+            <div class="main-project-header">
+                <h2 id="heading-postcards">Postcards</h2>
+            </div>
+            <div class="main-project-mid">
+                <div class="main-project-mid-left">
+                    <img src="./assets/postcards.webp" alt="Postcards app logo"
+                        class="downsize-image main-project-mid-left-img" width="256" height="256">
+                </div>
+                <div class="main-project-mid-right">
+                    <h3 class="project-subheading">Made with</h3>
+                    <p class="project-tech">Expo - React Native</p>
+                    <h3 class="project-subheading">Description</h3>
+                    <p>Mobile app simulating a pinboard, to which user can attach notes, to-do lists and images.
+                        Extensive system for aligning <i>pins</i> by sliding and resizing them.</p>
+                </div>
+            </div>
+            <div class="main-project-bottom">
+                <a href="https://github.com/dolinskih/Postcards" class="btn" aria-label="Postcards on GitHub">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="link-scribe" class="main-project" aria-labelledby="heading-scribe">
+            <div class="main-project-header">
+                <h2 id="heading-scribe">Scribe</h2>
+            </div>
+            <div class="main-project-mid">
+                <div class="main-project-mid-left">
+                    <img src="./assets/scribe.webp" alt="Scribe app logo" class="main-project-mid-left-img"
+                        id="scribeLogo" width="1498" height="415">
+                </div>
+                <div class="main-project-mid-right">
+                    <h3 class="project-subheading">Made with</h3>
+                    <p class="project-tech">Next.js &#x2022; Docker &#x2022; Google Firebase</p>
+                    <h3 class="project-subheading">Description</h3>
+                    <p>Web app for creating notes and to-do lists in teams. Authentication with user accounts.</p>
+                </div>
+            </div>
+            <div class="main-project-bottom">
+                <a href="https://github.com/dolinskih/Scribe" class="btn" aria-label="Scribe on GitHub">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="link-wordpress" class="main-project" aria-labelledby="heading-wordpress">
+            <div class="main-project-header">
+                <h2 id="heading-wordpress">WordPress Websites</h2>
+            </div>
+
+            <div class="main-project-sites">
+                <div class="main-project-sites-site">
+                    <div class="main-project-sites-site-left">
+                        <img src="./assets/podbrzoza_new.webp" alt="Domki Pod Brzozą screenshot"
+                            class="main-project-sites-site-left-img" width="1344" height="922">
+                    </div>
+                    <div class="main-project-sites-site-right">
+                        <h3>Domki Letniskowe Pod Brzozą</h3>
+                        <a href="https://podbrzozachlopy.pl" class="btn"
+                            aria-label="Visit Domki Letniskowe Pod Brzozą website">
+                            <i class="bi bi-link" aria-hidden="true"></i>
+                            <span>Link</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="main-project-sites-site">
+                    <div class="main-project-sites-site-left">
+                        <img src="./assets/parkbike.webp" alt="Park Bike screenshot"
+                            class="main-project-sites-site-left-img" width="1454" height="980">
+                    </div>
+                    <div class="main-project-sites-site-right">
+                        <h3>Park Bike</h3>
+                        <a href="https://parkbike.pl" class="btn" aria-label="Visit Park Bike website">
+                            <i class="bi bi-link" aria-hidden="true"></i>
+                            <span>Link</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="main-project-sites-site">
+                    <div class="main-project-sites-site-left">
+                        <img src="./assets/domkiletniskowetola.webp" alt="Domki Letniskowe Tola screenshot"
+                            class="main-project-sites-site-left-img" width="1896" height="950">
+                    </div>
+                    <div class="main-project-sites-site-right">
+                        <h3>Domki Letniskowe Tola</h3>
+                        <a href="https://domkiletniskowetola.pl" class="btn"
+                            aria-label="Visit Domki Letniskowe Tola website">
+                            <i class="bi bi-link" aria-hidden="true"></i>
+                            <span>Link</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <nav id="mainNav" aria-label="Primary navigation">
         <h2>CONTACT</h2>
         <div class="nav-contactlink">
             <a href="mailto:hubert.dolinski@outlook.com">hubert.dolinski@outlook.com</a>
@@ -40,149 +224,6 @@
         <a href="#link-scribe" class="nav-project">Scribe</a>
         <a href="#link-wordpress" class="nav-project">WordPress Websites</a>
     </nav>
-
-    <main>
-        <img src="./assets/logo.svg" alt="HD logo black" id="main-logo"/>
-        <h1 id="main-nametext">HUBERT DOLIŃSKI</h1>
-        <h3 id="main-portfoliotext">PORTFOLIO</h3>
-
-        <div id="link-floxt" class="main-project">
-            <div class="main-project-header">
-                <h2>Floxt</h2>
-            </div>
-            <div class="main-project-mid">
-                <div class="main-project-mid-left">
-                    <img src="./assets/floxt.webp" alt="Floxt app screenshot" class="main-project-mid-left-img">
-                </div>
-                <div class="main-project-mid-right">
-                    <h4>Made with</h4>
-                    <h3>Next.js &#x2022; Rust &#x2022; Tauri</h3>
-                    <h4>Description</h4>
-                    <p>Desktop web app for creating notes in an original formatting syntax with advanced
-                        functionalities: text formatting, editor automatic code completion, adding links and images,
-                        line numbering, file statistics and much more.</p>
-                </div>
-            </div>
-            <div class="main-project-bottom">
-                <a id="floxtMicrosoftStoreDownload"
-                    href="https://get.microsoft.com/installer/download/9NDVSRJ53DVK?referrer=appbadge" target="_self">
-                    <img src="https://get.microsoft.com/images/en-us%20light.svg" width="200" />
-                </a>
-
-                <a href="https://github.com/dolinskih/floxt">
-                    <button>
-                        <i class="bi bi-github"></i>
-                        <p>GitHub</p>
-                    </button>
-                </a>
-            </div>
-        </div>
-
-        <div id="link-postcards" class="main-project">
-            <div class="main-project-header">
-                <h2>Postcards</h2>
-            </div>
-            <div class="main-project-mid">
-                <div class="main-project-mid-left">
-                    <img src="./assets/postcards.webp" alt="Postcards app logo" class="downsize-image main-project-mid-left-img">
-                </div>
-                <div class="main-project-mid-right">
-                    <h4>Made with</h4>
-                    <h3>Expo - React Native</h3>
-                    <h4>Description</h4>
-                    <p>Mobile app simulating a pinboard, to which user can attach notes, to-do lists and images.
-                        Extensive system for aligning <i>pins</i> by sliding and resizing them.</p>
-                </div>
-            </div>
-            <div class="main-project-bottom">
-                <a href="https://github.com/dolinskih/Postcards">
-                    <button>
-                        <i class="bi bi-github"></i>
-                        <p>GitHub</p>
-                    </button>
-                </a>
-            </div>
-        </div>
-
-        <div id="link-scribe" class="main-project">
-            <div class="main-project-header">
-                <h2>Scribe</h2>
-            </div>
-            <div class="main-project-mid">
-                <div class="main-project-mid-left">
-                    <img src="./assets/scribe.webp" alt="Scribe app logo" class="main-project-mid-left-img" id="scribeLogo">
-                </div>
-                <div class="main-project-mid-right">
-                    <h4>Made with</h4>
-                    <h3>Next.js &#x2022; Docker &#x2022; Google Firebase</h3>
-                    <h4>Description</h4>
-                    <p>Web app for creating notes and to-do lists in teams. Authentication with user accounts.</p>
-                </div>
-            </div>
-            <div class="main-project-bottom">
-                <a href="https://github.com/dolinskih/Scribe">
-                    <button>
-                        <i class="bi bi-github"></i>
-                        <p>GitHub</p>
-                    </button>
-                </a>
-            </div>
-        </div>
-
-        <div id="link-wordpress" class="main-project">
-            <div class="main-project-header">
-                <h2>WordPress Websites</h2>
-            </div>
-
-            <div class="main-project-sites">
-                <div class="main-project-sites-site">
-                    <div class="main-project-sites-site-left">
-                        <img src="./assets/podbrzoza_new.webp" alt="Domki Pod Brzozą screenshot" class="main-project-sites-site-left-img">
-                    </div>
-                    <div class="main-project-sites-site-right">
-                        <h3>Domki Letniskowe Pod Brzozą</h3>
-                        <a href="https://podbrzozachlopy.pl">
-                            <button>
-                                <i class="bi bi-link"></i>
-                                <p>Link</p>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="main-project-sites-site">
-                    <div class="main-project-sites-site-left">
-                        <img src="./assets/parkbike.webp" alt="Park Bike screenshot" class="main-project-sites-site-left-img">
-                    </div>
-                    <div class="main-project-sites-site-right">
-                        <h3>Park Bike</h3>
-                        <a href="https://parkbike.pl">
-                            <button>
-                                <i class="bi bi-link"></i>
-                                <p>Link</p>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="main-project-sites-site">
-                    <div class="main-project-sites-site-left">
-                        <img src="./assets/domkiletniskowetola.webp" alt="Domki Letniskowe Tola screenshot" class="main-project-sites-site-left-img">
-                    </div>
-                    <div class="main-project-sites-site-right">
-                        <h3>Domki Letniskowe Tola</h3>
-                        <a href="https://domkiletniskowetola.pl">
-                            <button>
-                                <i class="bi bi-link"></i>
-                                <p>Link</p>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </main>
 
     <footer>
         <p>&copy; Hubert Doliński 2026</p>

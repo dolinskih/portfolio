@@ -52,6 +52,13 @@ main {
 
 #main-logo {
     height: 10vh;
+    width: auto;
+}
+
+#main-portfoliotext {
+    font-size: 1.17em;
+    font-weight: 700;
+    margin: 1em 0;
 }
 
 /* Projects styling */
@@ -92,15 +99,15 @@ main {
 
 .main-project-mid-left-img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
 }
 
 .downsize-image {
     max-width: 100%;
     width: auto;
+    height: auto;
 }
 
 #scribeLogo {
@@ -112,6 +119,18 @@ main {
 
 .main-project-mid-right {
     padding: 1em;
+}
+
+.project-subheading {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 1.33em 0;
+}
+
+.project-tech {
+    font-size: 1.17em;
+    font-weight: 700;
+    margin: 1em 0;
 }
 
 .main-project-bottom {
@@ -142,7 +161,9 @@ main {
 
 .main-project-sites-site-left-img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
+    display: block;
 }
 
 .main-project-sites-site-right {
@@ -165,8 +186,8 @@ footer > p {
 }
 
 /* Button general styling */
-button {
-    display: flex;
+.btn {
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     color: white;
@@ -178,9 +199,10 @@ button {
     font-size: 110%;
 }
 
-button:hover {
+.btn:hover {
     color: black;
     background-color: white;
+    opacity: 1;
     cursor: pointer;
     -webkit-box-shadow: 5px 8px 20px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 5px 8px 20px 0px rgba(0, 0, 0, 0.2);
@@ -197,17 +219,25 @@ a:hover {
     opacity: 0.8;
 }
 
-button i {
+.btn i {
     font-size: 140%;
     margin-right: 0.2em;
+    min-width: 1em;
+    text-align: center;
 }
 
-button p {
+.btn span {
     margin: 0;
 }
 
 #floxtMicrosoftStoreDownload {
     padding-top: 0.5em;
+}
+
+#floxtMicrosoftStoreDownload img {
+    width: 200px;
+    height: auto;
+    display: block;
 }
 
 /* Arrow Up Button styling */
@@ -217,6 +247,8 @@ button p {
     bottom: 0.5em;
     right: 0.5em;
     font-size: 2.5em;
+    padding: 0;
+    color: inherit;
     transition: opacity 0.25s;
     display: none;
     opacity: 0;
@@ -242,6 +274,8 @@ button p {
     top: 0.5em;
     right: 0.5em;
     font-size: 2.5em;
+    padding: 0;
+    color: inherit;
     transition: opacity 0.25s;
     display: none;
     align-items: center;
@@ -339,7 +373,7 @@ button p {
         width: 100%;
     }
 
-    button {
+    .btn {
         font-size: 120%;
     }
 
@@ -368,13 +402,13 @@ button p {
         background-color: black;
     }
 
-    button {
+    .btn {
         background-color: white;
         border: 1px solid white;
         color: black;
     }
 
-    button:hover {
+    .btn:hover {
         background-color: black;
         color: white;
         -webkit-box-shadow: 5px 8px 20px 0px rgba(255, 255, 255, 0.2);
